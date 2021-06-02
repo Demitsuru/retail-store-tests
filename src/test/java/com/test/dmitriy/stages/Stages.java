@@ -1,4 +1,4 @@
-package com.test.dmitriy;
+package com.test.dmitriy.stages;
 
 import com.test.dmitriy.pageobjects.MainPage;
 import com.test.dmitriy.pageobjects.OrderConfirmationPage;
@@ -16,7 +16,7 @@ public class Stages extends BaseTest {
     @ProvidedScenarioState
     static String orderReference;
 
-    static class Given extends Stage<Given> {
+    public static class Given extends Stage<Given> {
 
         public Given signedInUser() {
 
@@ -47,7 +47,6 @@ public class Stages extends BaseTest {
 
     public static class Then extends Stage<Then> {
         public Then orderIsPlaced() {
-
             return self();
         }
     }

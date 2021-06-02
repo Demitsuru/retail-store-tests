@@ -5,7 +5,7 @@ import org.openqa.selenium.By;
 import static com.codeborne.selenide.Selenide.$;
 
 public class PersonalAccountPage {
-    private By orderHistory = By.xpath("//span[contains(text(),'Order history and details')]");
+    private final By orderHistory = By.xpath("//span[contains(text(),'Order history and details')]");
     private final By logo = By.xpath("//img[@alt='My Store']");
 
     public MainPage goToMainPage() {

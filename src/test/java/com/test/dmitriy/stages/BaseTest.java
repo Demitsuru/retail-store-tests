@@ -1,4 +1,4 @@
-package com.test.dmitriy;
+package com.test.dmitriy.stages;
 
 import com.codeborne.selenide.logevents.SelenideLogger;
 import io.qameta.allure.selenide.AllureSelenide;
